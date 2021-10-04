@@ -1,0 +1,19 @@
+{
+  "name": "blogpost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitish0712/blogpost.git"
+  },
+  "author": "Nitish Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitish0712/blogpost/issues"
+  },
+  "homepage": "https://github.com/nitish0712/blogpost#readme"
+}
