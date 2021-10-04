@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nitish0712/blogpost/issues"
   },
-  "homepage": "https://github.com/nitish0712/blogpost#readme"
+  "homepage": "https://github.com/nitish0712/blogpost#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
