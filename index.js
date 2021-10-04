@@ -17,11 +17,7 @@ app.set('views', './views');
 
 
 
-app.get('/', function(req,res){
-    return res.render('home',{
-        title: "Home"
-    });
-});
+app.get('/', require('./routes'));
 
 app.listen(port, function(err){
     if(err){
