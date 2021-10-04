@@ -6,5 +6,7 @@ const homecontroller = require('../controllers/home_controller');
 
 router.get('/', homecontroller.home );
 
+router.use('/blog', require('./blog'));
+
 
 module.exports = router;
