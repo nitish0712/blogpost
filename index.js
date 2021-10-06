@@ -3,8 +3,17 @@ const {name}= require('ejs');
 const expressLayouts = require('express-ejs-layouts')
 const path = require('path');
 const port = 3000;
+const sassMiddleware = require('node-sass-middleware');
 
 const app = express();
+
+app.use(sassMiddleware({
+    src: './assets/scss',
+    dest: './assets/css',
+    debug: true,
+    outputStyle: 'expanded',
+    prefix: '/css'
+}))
 
 app.use(express.urlencoded());
 
@@ -15,7 +24,7 @@ app.set('layout extractScripts', true);
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
-
+app.use(express.static('./assets'));
 
 app.use('/', require('./routes'));
 
