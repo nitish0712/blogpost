@@ -1,9 +1,21 @@
+<link rel="stylesheet" href="/css/create-blog.css">
+
 <h1>Create Blog</h1>
 
 <form action="" method="POST">
-    <input type="text" name="title" placeholder="Enter Title" required>
-    <input type="textbox" name="description" placeholder="Enter Description" required>
-    <button id="button" type="submit">
-        Add
+    <label for="title">Title</label><br>
+    <input type="text" id="title" name="title" placeholder="Enter Title" required><br>
+    <br>
+    <label for="category">Category</label><br>
+    <input type="text" id="category" name="category" placeholder="Enter Category" required><br>
+    <br>
+    <label for="content">Content</label><br>
+    <textarea type="text" id="content" name="content" placeholder="Enter Content" required></textarea>
+    <br>
+    <button id="submit" type="submit" style="background-color: green;">
+        Submit
+    </button>
+    <button id="reset" type="reset" style="background-color: yellow; color: black;">
+        Clear
     </button>
 </form>

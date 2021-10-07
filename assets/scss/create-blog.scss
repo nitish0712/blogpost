@@ -1,0 +1,25 @@
+h1{
+    color: cornflowerblue;
+}
+
+form{
+    font-size: 1.5rem;
+
+    input{
+        width: 80%;
+        height:8%
+    }
+    textarea{
+        width: 80%;
+        height: 25%;
+        font-size: 1rem;
+    }
+    button{
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        width: 7rem;
+        border: 2px black solid;
+        color: white;
+    }
+    
+}

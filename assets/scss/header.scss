@@ -1,0 +1,28 @@
+header{
+    height:10%;
+    width: auto;
+    background-color: black;
+    color: blanchedalmond;
+    display:flex;
+    justify-content: start;
+    padding-left: 3%;
+    padding-right: 3%;
+    flex-direction: row;
+    h2{
+        margin-top: 1rem;
+    }
+    ul{
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        li{
+            margin: 1%;
+            a{
+                color: white;
+                font-weight: 900;
+                text-decoration: none;
+            }
+        }
+    }
+}
