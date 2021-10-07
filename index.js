@@ -7,6 +7,11 @@ const sassMiddleware = require('node-sass-middleware');
 
 const app = express();
 
+
+const db = require('./config/mongoose');
+const blogs = require('./model/blog');
+
+
 app.use(sassMiddleware({
     src: './assets/scss',
     dest: './assets/css',
