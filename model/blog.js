@@ -1,21 +1,20 @@
 const mongoose = require('mongoose');
 
 
-//defining the schema of db
-const todoSchema =new mongoose.Schema({
-    work: {
+const blogSchema =new mongoose.Schema({
+    title: {
         type: String,
         required: true
     },
-    org: {
+    category: {
         type: String,
         required: true
     },
-    duedate: {
+    content: {
         type: String,
         required: true
     }
 });
 
-const Todo = mongoose.model('Todo', todoSchema);
-module.exports = Todo; 
+const Blog = mongoose.model('Blog', todoSchema);
+module.exports = Blog; 
