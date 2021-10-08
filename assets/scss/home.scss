@@ -1,0 +1,48 @@
+#heading{
+    color: cadetblue;
+}
+
+#content{
+    margin-top: 2%;
+
+    .list{
+        font-size: larger;
+        color: white;
+        background-color: blue;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 1px;
+        border-radius: 25px;
+        border: 2px black solid;
+       
+
+        .listdiv{
+            height: auto;
+            display: flex;
+
+            .details{
+                width: 80%;
+               
+                margin: auto;
+                margin-left: 2%;
+                text-align: left;
+            }
+    
+            .buttons{
+                width: 20%;
+                justify-content: right;
+                margin: auto;
+    
+                .delete-button{
+                    background-color: red;
+                }
+    
+                .edit-button{
+                    background-color: yellowgreen;
+                }
+    
+            }
+        }
+    }
+}

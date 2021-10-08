@@ -1,1 +1,30 @@
-<h1>Hello!!!!!</h1>
+<link rel="stylesheet" href="/css/home.css">
+<h1 id="heading">
+    <i class="fas fa-list"></i>
+    All Blogs
+</h1>
+
+<div id='content'>
+    <ul type='none'>
+        <% for(i of Blogs){ %>
+            <li class="list">
+                <div class="listdiv">
+                    <div class="details"> 
+                        <p><%= i.title %></p>
+                    </div>
+                    <div class="buttons">
+                        <a href="/blog/open/?id=<%= i.id %>">
+                            <button class="open-button">Open</button>
+                        </a>
+                        <a href="/blog/delete/?id=<%= i.id %>">
+                            <button class="delete-button">Delete</button>
+                        </a>
+                        <a href="/blog/edit/?id=<%= i.id %>">
+                            <button class="edit-button">Edit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        <% } %>
+    </ul>
+</div>

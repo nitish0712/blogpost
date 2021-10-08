@@ -15,7 +15,7 @@ const blogs = require('./model/blog');
 app.use(sassMiddleware({
     src: './assets/scss',
     dest: './assets/css',
-    debug: true,
+    debugger: true,
     outputStyle: 'expanded',
     prefix: '/css'
 }));

@@ -1,0 +1,45 @@
+#heading {
+  color: cadetblue;
+}
+
+#content {
+  margin-top: 2%;
+}
+
+#content .list {
+  font-size: larger;
+  color: white;
+  background-color: blue;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 1px;
+  border-radius: 25px;
+  border: 2px black solid;
+}
+
+#content .list .listdiv {
+  height: auto;
+  display: flex;
+}
+
+#content .list .listdiv .details {
+  width: 80%;
+  margin: auto;
+  margin-left: 2%;
+  text-align: left;
+}
+
+#content .list .listdiv .buttons {
+  width: 20%;
+  justify-content: right;
+  margin: auto;
+}
+
+#content .list .listdiv .buttons .delete-button {
+  background-color: red;
+}
+
+#content .list .listdiv .buttons .edit-button {
+  background-color: yellowgreen;
+}

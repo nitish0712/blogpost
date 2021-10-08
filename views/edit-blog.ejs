@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/create-blog.css">
+
+<h1>Edit Blog</h1>
+
+<form action="/blog/editBlog/?id=<%=edit_blog.id%>" method="POST">
+    <!-- <%=edit_blog.id%> -->
+    <label for="title">Title</label><br>
+    <input type="text" id="title" name="title" value="<%=edit_blog.title%>" required><br>
+    <br>
+    <label for="category">Category</label><br>
+    <input type="text" id="category" name="category" value="<%=edit_blog.category%>" required><br>
+    <br>
+    <label for="content">Content</label><br>
+    <textarea type="text" id="content" name="content" value="<%= edit_blog.content %>" required></textarea>
+    <br>
+    <button id="submit" type="submit" style="background-color: green;">
+        Submit
+    </button>
+    <button id="reset" type="reset" style="background-color: yellow; color: black;">
+        Clear
+    </button>
+</form>

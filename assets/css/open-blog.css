@@ -1,0 +1,39 @@
+#opendiv {
+  margin: auto;
+  width: 70%;
+  font-size: larger;
+}
+
+#opendiv .tcc {
+  display: flex;
+}
+
+#opendiv .tcc .tcc1 {
+  width: 10%;
+  text-align: left;
+  margin-bottom: 3%;
+}
+
+#opendiv .tcc .tcc2 {
+  width: 90%;
+  text-align: left;
+}
+
+.buttons {
+  justify-content: right;
+  margin: auto;
+}
+
+.buttons .delete-button {
+  background-color: red;
+  width: 8%;
+  height: 5%;
+  color: white;
+}
+
+.buttons .edit-button {
+  background-color: yellowgreen;
+  width: 8%;
+  height: 5%;
+  color: white;
+}
