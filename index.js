@@ -1,9 +1,13 @@
 const express = require('express');
+const session = require('express-session');
 const {name}= require('ejs');
 const expressLayouts = require('express-ejs-layouts')
 const path = require('path');
 const port = 3000;
 const sassMiddleware = require('node-sass-middleware');
+const MongoStore = require('connect-mongodb-session')(session);
+const flash = require('connect-flash');
+const customMware = require('./config/middleware');
 
 const app = express();
 
@@ -32,6 +36,18 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.use(express.static('./assets'));
+
+
+
+app.use(session({
+    secret:'geeksforgeeks',
+    saveUninitialized: true,
+    resave: true
+}));
+
+
+app.use(flash());
+// app.use(customMware.setFlash);
 
 app.use('/', require('./routes'));
 

@@ -14,7 +14,7 @@ module.exports.createBlog= function(req,res){
     }, function(err, newBlogs){
         if(err){console.log('error in creating a list'); return;}
 
-        console.log('**********', newBlogs);
+        req.flash('message', 'New Blog Created');
         return res.redirect('/');
         
     });
@@ -30,6 +30,7 @@ module.exports.delete = function(req,res){
                 return;
             }
         }
+        req.flash('message', 'Blog Deleted Successfully!!');
         return res.redirect('/');
     });
     
@@ -66,6 +67,7 @@ module.exports.editBlog = function(req,res){
         blog.content=req.body.content;
 
         blog.save();
+        req.flash('message', 'Blog Edited Successfully!!!');
         return res.redirect('/');
     });
 
