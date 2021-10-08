@@ -66,7 +66,7 @@ module.exports.editBlog = function(req,res){
         blog.content=req.body.content;
 
         blog.save();
-        return res.redirect('back');
+        return res.redirect('/');
     });
 
 }

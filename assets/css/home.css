@@ -25,6 +25,7 @@
 
 #content .list .listdiv .details {
   width: 80%;
+  height: auto;
   margin: auto;
   margin-left: 2%;
   text-align: left;
@@ -32,7 +33,6 @@
 
 #content .list .listdiv .buttons {
   width: 20%;
-  justify-content: right;
   margin: auto;
 }
 

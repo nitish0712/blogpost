@@ -8,12 +8,12 @@ form {
 
 form input {
   width: 80%;
-  height: 8%;
+  height: 7%;
 }
 
 form textarea {
   width: 80%;
-  height: 25%;
+  height: 20%;
   font-size: 1rem;
 }
 

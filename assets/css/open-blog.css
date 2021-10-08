@@ -5,6 +5,7 @@
 }
 
 #opendiv .tcc {
+  height: auto;
   display: flex;
 }
 
